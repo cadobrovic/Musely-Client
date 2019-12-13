@@ -1,0 +1,14 @@
+/* AnnotationContainer.css */
+
+
+ .anno_sidebar {
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+    width: 280px;
+    background: black;
+    padding: 20px;
+    font-size: 15px;
+    
+  }
+  
