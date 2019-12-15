@@ -1,25 +1,27 @@
 import React from 'react'
-import EditAnnotation from './components/song/EditAnnotation'
-import Note from './components/song/Note'
-import MiniWindowTime from './components/song/MiniWindowTime'
-import Annotation from './components/song/Annotation'
+import styled from 'styled-components'
+
+const Bar = styled.div`
+    width: 100%;
+    height: 4rem;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+`
+
+const Item = styled.div`
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+`
 
 export default {
-	title: 'Edit Annotation'
+    title: 'Edit Annotation'
 }
 
-export const editor = () => <EditAnnotation />
-
-export const note = () => <Note />
-export const miniTime = () => (
-	<MiniWindowTime start_time={250.38} end_time={316.37666666666667} />
-)
-
-export const annotation = () => (
-	<Annotation
-		startTime={55.35}
-		endTime={66.34}
-		text={'Hello World, welcome to New York.'}
-        tag={'Crescendo'}
-	/>
+export const songBar = () => (
+    <Bar>
+        <Item> Hello </Item>
+        <Item> Hello </Item>
+    </Bar>
 )
