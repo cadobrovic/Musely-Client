@@ -178,7 +178,6 @@ class SongContainer extends Component {
         annotations.forEach(a => {
             if (a.id === toggle.id) name = a.tag
         })
-        console.log('delete name', name)
         dispatch(
             deleteTag({
                 name: name
@@ -243,7 +242,11 @@ class SongContainer extends Component {
             <SongWrapper>
                 {/* <SongHeader>{name}</SongHeader> */}
                 <MediaButtonsWrapper>
-                    <Button circular icon={this.state.playing ? 'pause' : 'play'} onClick={this.handleTogglePlay}/>
+                    <Button
+                        circular
+                        icon={this.state.playing ? 'pause' : 'play'}
+                        onClick={this.handleTogglePlay}
+                    />
                     <Label>
                         Current Time: {this.formatTime(this.state.currentTime)}
                     </Label>
@@ -251,7 +254,7 @@ class SongContainer extends Component {
                         Cursor: {this.formatTime(this.state.cursorTime)}
                     </Label>
                 </MediaButtonsWrapper>
-                
+
                 <Waveform
                     //src={`/${name}.mp3`}
                     src={'/jeneregretterien.mp3'}
@@ -297,7 +300,10 @@ class SongContainer extends Component {
                             })
                         )
                         this.setState({
-                            isEditingAnnotation: !this.state.isEditingAnnotation
+                            isEditingAnnotation: !this.state
+                                .isEditingAnnotation,
+                            text: '',
+                            tag: ''
                         })
                     }}
                 >
