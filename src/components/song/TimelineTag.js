@@ -159,7 +159,7 @@ class TagTimeline extends Component {
                             >
                                 {props => (
                                     <Fragment>
-                                        <p>{tag.name}</p>
+                                        <p style={{marginBottom: '1px'}}>{tag.name}</p>
                                         <TimelineTagWrapper
                                             style={props}
                                             color={colors[tag.name].bar}
