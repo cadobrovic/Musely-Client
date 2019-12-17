@@ -4,7 +4,7 @@
  .anno_sidebar_half {
     position: relative;
     overflow: hidden;
-    min-height: 40rem;
+    height: 40rem;
     /* width: 280px; */
     background: rgb(255, 255, 255);
     transition: 1s;
@@ -27,7 +27,7 @@
  .anno_sidebar_full {
     position: relative;
     overflow: hidden;
-    min-height: 40rem;
+    height: 40rem;
     /* width: 280px; */
     background: rgb(255, 255, 255);
     transition: 1s;
@@ -50,7 +50,7 @@
  .anno_sidebar_close {
     position: relative;
     overflow: hidden;
-    min-height: 40rem;
+    height: 40rem;
     /* width: 280px; */
     background: rgb(255, 255, 255);
     transition: 1s;
