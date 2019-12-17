@@ -35,7 +35,7 @@ class NavBar extends Component {
                     <Menu.Item name="home" active={activeItem === 'home'}>
                         <Link to="/library">Musely</Link>
                     </Menu.Item>
-                    <MenuItem style={largerText}>{song || null}</MenuItem>
+                    <MenuItem style={largerText}>{song || 'Non, je ne regrette rien'}</MenuItem>
                     <Menu.Menu position="right">
                         <Input
                             style={searchBar}
