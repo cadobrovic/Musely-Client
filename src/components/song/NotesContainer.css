@@ -2,7 +2,7 @@
     position: absolute;
     right: 0;
     /*overflow: hidden;*/
-    height: 40rem;
+    min-height: 40rem;
     width: 49%;
     background: rgb(255, 255, 255);
     padding: 20px;
@@ -17,7 +17,7 @@
     position: absolute;
     right: 0;
     /*overflow: hidden;*/
-    height: 40rem;
+    min-height: 40rem;
     width: 98%;
     background: rgb(255, 255, 255);
     padding: 20px;
@@ -32,7 +32,7 @@
     position: absolute;
     right: 0;
     /*overflow: hidden;*/
-    height: 40rem;
+    min-height: 40rem;
     width: 0%;
     opacity: 0;
     background: rgb(255, 255, 255);
@@ -48,7 +48,7 @@
     position: absolute;
     right: 0;
     /*overflow: hidden;*/
-    height: 40rem;
+    min-height: 40rem;
     width: 0%;
     opacity: 0;
     background: rgb(255, 255, 255);

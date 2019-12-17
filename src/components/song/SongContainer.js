@@ -40,7 +40,7 @@ const MediaButtonsWrapper = styled.div`
 
 const SongWrapper = styled.div`
     position: relative;
-    height: 100%;
+    min-height: 100vh;
     padding-top: 3rem;
     background-color: rgb(206, 217, 213);
 `
