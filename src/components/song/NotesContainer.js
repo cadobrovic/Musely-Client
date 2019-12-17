@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Segment, Button, Icon, Label } from 'semantic-ui-react'
+import { Segment, Button, Icon, Label, Form, TextArea } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 // import { useSpring, useTransition, animated } from "react-spring"
 import { Keyframes, animated } from 'react-spring/renderprops'
@@ -20,7 +20,7 @@ const Sidebar = Keyframes.Spring({
 const Container = styled.div`
     overflow-y: auto;
     height: 100%;
-    padding: 30px 50px 70px 50px;
+    padding: 20px 20px 10px 20px;
 `
 
 export default class NotesContainer extends Component {
@@ -43,7 +43,24 @@ export default class NotesContainer extends Component {
                 >
                     Notes
                 </Label>
-                <Container></Container>
+                <Container>
+                    <Form>
+                        <TextArea
+                            placeholder="Type notes here..."
+                            value={this.state.text}
+                            onChange={this.handleTextChange}
+                            style={{
+                                minHeight: 400,
+                                resize: 'none',
+                                paddingLeft: 10,
+                                paddingTop: 10,
+                                paddingRight: 10,
+                                paddingBottom: 10,
+                                fontSize: 18
+                            }}
+                        />
+                    </Form>
+                </Container>
             </div>
         )
     }

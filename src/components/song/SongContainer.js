@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Sidebar, Segment, Button, Icon, Label } from 'semantic-ui-react'
+import { Sidebar, Segment, Button, Icon, Label, Header } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 // import Note from './Note'
 import Waveform from './Waveform'
@@ -43,6 +43,15 @@ const SongWrapper = styled.div`
     min-height: 100vh;
     padding-top: 3rem;
     background-color: rgb(206, 217, 213);
+`
+
+const Footer = styled.div`
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 100px 30px 100px;
+    background-color: rgb(170, 137, 179);
+    display: block;
 `
 
 const TagTimelineWrapper = styled.div`
@@ -431,7 +440,8 @@ class SongContainer extends Component {
                     style={{
                         display: 'inline-flex',
                         marginTop: '10px',
-                        width: '100%'
+                        width: '100%',
+                        paddingBottom: '140px',
                     }}
                 >
                     <AnnotationContainer
@@ -444,6 +454,14 @@ class SongContainer extends Component {
                         annoOpen={this.state.annotationDrawerIsOpen}
                     />
                 </div>
+                <Footer>
+                    <Header as='h2'>
+                        <Header.Content>
+                        Musely
+                        </Header.Content>
+                    </Header>
+                    <Header size='medium'>Made by Carl, Jay, Sarah, and Lukas</Header>
+                </Footer>
             </SongWrapper>
         )
     }
